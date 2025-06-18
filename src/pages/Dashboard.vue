@@ -479,6 +479,7 @@ const deleteTask = async (task: any) => {
   if (removeTask) {
     editId.value = "";
   }
+  await fetchTasks(false);
 }
 
 const fetchTasks = async (loading: boolean) => {
